@@ -20,7 +20,7 @@ Este script facilita la creación y configuración de nuevos proyectos, así com
 ./Crear_Proyecto.sh
 ```
 
-* Funcionalidades
+### Funcionalidades
 * Configuración global para Git.
 * Creación de nuevos proyectos o actualización de proyectos existentes.
 * Clonación de repositorios.
@@ -40,7 +40,7 @@ Este script automatiza la creación y despliegue de recursos en Kubernetes Micro
 ./Despliegue_de_Proyectos.sh
 ```
 
-Funcionalidades
+### Funcionalidades
 * Selección del ambiente de trabajo y namespace.
 * Creación de Deployments, Ingress, Services, PV, PVC y Secrets.
 * Verificación y despliegue de recursos en Kubernetes.
@@ -48,3 +48,46 @@ Funcionalidades
 
 ---
 
+## Crear Sealed Secret
+Este script automatiza la creación y aplicación de Sealed Secrets en Kubernetes, convirtiendo archivos .env en SealedSecrets.
+
+### Uso
+
+```bash
+./create_sealed_secret.sh
+```
+
+### Funcionalidades
+* Verificación de instalación de kubeseal.
+* Despliegue del controlador Sealed Secrets si no está presente.
+* Obtención del certificado público del controlador.
+* Procesamiento de archivos .env y generación de Sealed Secrets.
+* Aplicación y verificación de Sealed Secrets en el clúster.
+  
+### Requisitos
+* Kubernetes MicroK8s instalado.
+* Helm3 instalado.
+* Permisos adecuados para ejecutar comandos en el clúster de Kubernetes.
+
+---
+
+### Contribuciones
+Las contribuciones son bienvenidas. Por favor, sigue los pasos a continuación para contribuir:
+
+* Haz un fork del repositorio.
+* Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+* Realiza tus cambios y haz commit (git commit -am 'Añadir nueva funcionalidad').
+* Haz push a la rama (git push origin feature/nueva-funcionalidad).
+* Abre un Pull Request.
+  
+### Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+### Contacto
+
+Para cualquier pregunta o comentario, puedes contactarnos en wowfoxz@gmail.com
+
+---
+
+¡Gracias por utilizar nuestras plantillas de scripts!

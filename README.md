@@ -28,6 +28,8 @@ Este script facilita la creación y configuración de nuevos proyectos, así com
 * Construcción y subida de imágenes Docker.
 * Creación de tags y releases en GitHub.
 
+---
+
 ## Despliegue de Proyectos en Kubernetes
 
 Este script automatiza la creación y despliegue de recursos en Kubernetes MicroK8s, incluyendo Deployments, Ingress, Services, Persistent Volumes, Persistent Volume Claims y Secrets.
@@ -43,4 +45,6 @@ Funcionalidades
 * Creación de Deployments, Ingress, Services, PV, PVC y Secrets.
 * Verificación y despliegue de recursos en Kubernetes.
 * Configuración de Horizontal Pod Autoscalers (HPA).
+
+---
 
